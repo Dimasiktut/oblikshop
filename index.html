@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ОБЛИК</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --background-dark: #0a0a0a;
+        --surface-color: #1a1a1a;
+        --border-color: #333333;
+        --text-light: #f5f5f5;
+        --text-muted: #888888;
+        --accent-color: #ffffff;
+        /* Added for Hero/StyledButton */
+        --primary-purple: #9333ea;
+        --gold-ornament: #FFD700;
+        --accent-glow-cyan: rgba(0, 255, 255, 0.7);
+      }
+      html {
+        overscroll-behavior: none;
+      }
+      body {
+        background-color: var(--background-dark);
+        color: var(--text-light);
+        font-family: 'Manrope', sans-serif;
+        cursor: none !important;
+      }
+      a, button, [role="button"], [class*="cursor-pointer"], input, textarea, select {
+        cursor: none !important;
+      }
+      a.link {
+          cursor: none !important;
+      }
+      .font-display {
+        font-family: 'Russo One', sans-serif;
+      }
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      @keyframes levitate {
+        0%, 100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+      .animate-levitate {
+        animation: levitate 4s ease-in-out infinite;
+      }
+      @keyframes spin-slow {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .animate-spin-slow {
+          animation: spin-slow 20s linear infinite;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-DTiQRHVj.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
